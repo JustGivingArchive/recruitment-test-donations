@@ -14,6 +14,8 @@ A good solution will
 
 Your solution should be performant, consider the `DOMContentLoaded` and `load` events, and first time to paint. You may choose to use server-side rendering or service workers to achieve this.
 
+Please put your solution on a public repository hosting service such as [GitHub](https://github.com) (it is always nice to see a clean commit history). Finally, don't forget the README file for your solution.
+
 ### Getting Started
 1. Create an account on [JustGiving Developer](https://developer.justgiving.com/) to obtain an `appId`.
 
