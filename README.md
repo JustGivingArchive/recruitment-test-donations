@@ -16,6 +16,9 @@ Your solution should be performant, consider the `DOMContentLoaded` and `load` e
 
 Please put your solution on a public repository hosting service such as [GitHub](https://github.com) (it is always nice to see a clean commit history). Finally, don't forget the README file for your solution.
 
+### Concessions
+If you are not applying for a senior position, we would encourage you to use the [create react app](https://github.com/facebookincubator/create-react-app) project. The production readiness is less important here, we will help you with that when you get hired.
+
 ### Getting Started
 1. Create an account on [JustGiving Developer](https://developer.justgiving.com/) to obtain an `appId`.
 
