@@ -33,7 +33,7 @@ If you are not applying for a senior position, we would encourage you to use the
 	| [National Trust](https://www.justgiving.com/nationaltrust)                    | 183560 |
 	| [Save the Children](https://www.justgiving.com/savethechildren)               | 18570  |
 
-3. Substitute the `appId` and `charityId` in the curl commands below. You should be able to use these commands to retrieve information about your charity.
+3. Substitute the `appId` and `charityId` in the [curl](https://curl.haxx.se/docs/manual.html) commands below. You should be able to use these commands to retrieve information about your charity.
 ```
 curl -H "Content-Type: application/json" https://api.justgiving.com/{appId}/v1/charity/{charityId}
 ```
