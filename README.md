@@ -14,7 +14,7 @@ A good solution will
 
 Your solution should be performant, consider the `DOMContentLoaded` and `load` events, and first time to paint. You may choose to use server-side rendering or service workers to achieve this.
 
-Please put your solution on a public repository hosting service such as [GitHub](https://github.com) or [Bitbucket](https://bitbucket.org) (it is always nice to see a clean commit history). Finally, don't forget the README file for your solution.
+Please put your solution on a repository hosting service such as [GitHub](https://github.com) or [Bitbucket](https://bitbucket.org) (it is always nice to see a clean commit history). Finally, don't forget the README file for your solution.
 
 ### Concessions
 If you are not applying for a senior position, we would encourage you to use the [create react app](https://github.com/facebookincubator/create-react-app) project. The production readiness is less important here, we will help you with that when you get hired.
