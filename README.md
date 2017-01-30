@@ -12,8 +12,6 @@ A good solution will
 * have an elegant user experience and design
 * use _appropriate_ front end tooling
 
-Your solution should be performant, consider the `DOMContentLoaded` and `load` events, and first time to paint. You may choose to use server-side rendering or service workers to achieve this.
-
 Please put your solution on a repository hosting service such as [GitHub](https://github.com) or [Bitbucket](https://bitbucket.org) (it is always nice to see a clean commit history). Finally, don't forget the README file for your solution.
 
 ### Concessions
