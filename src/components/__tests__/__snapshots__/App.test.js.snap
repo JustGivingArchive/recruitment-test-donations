@@ -1,5 +1,19 @@
 exports[`App renders correctly 1`] = `
-<h1>
-  hi
-</h1>
+<div>
+  <h1>
+    Fundraising!
+  </h1>
+  <div
+    class="charity_container">
+    <h2>
+      Charity Name
+    </h2>
+    <p>
+      Charity description
+    </p>
+    <img
+      alt="logo of charity name"
+      src="logo-url" />
+  </div>
+</div>
 `;
