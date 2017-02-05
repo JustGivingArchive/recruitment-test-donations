@@ -4,7 +4,7 @@ exports[`App renders correctly 1`] = `
     Fundraising!
   </h1>
   <div
-    class="charity_container">
+    className="charity_container">
     <h2>
       Charity Name
     </h2>
@@ -14,6 +14,21 @@ exports[`App renders correctly 1`] = `
     <img
       alt="logo of charity name"
       src="logo-url" />
+  </div>
+  <div
+    className="donations_container">
+    <div
+      className="donation">
+      <p>
+        amount
+      </p>
+      <p>
+        message
+      </p>
+      <img
+        alt="donor profile picture"
+        src="donor profile picture" />
+    </div>
   </div>
 </div>
 `;

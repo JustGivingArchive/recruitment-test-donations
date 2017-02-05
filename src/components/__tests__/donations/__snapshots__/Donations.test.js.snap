@@ -1,0 +1,17 @@
+exports[`Test donation info componenet renders correctly 1`] = `
+<div
+  className="donations_container">
+  <div
+    className="donation">
+    <p>
+      amount
+    </p>
+    <p>
+      message
+    </p>
+    <img
+      alt="donor profile picture"
+      src="donor profile picture" />
+  </div>
+</div>
+`;
