@@ -40,5 +40,4 @@ describe('Test donation info componenet', () => {
     const wrappingDiv = divs.first();
     expect(wrappingDiv.children()).toEqual(donations().children());
   });
-
 });

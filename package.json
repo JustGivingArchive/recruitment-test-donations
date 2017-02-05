@@ -2,18 +2,20 @@
   "name": "Recruitment-Test",
   "version": "1.0.0",
   "description": "Demonstration of ability to use React",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "webpack-dev-server",
+    "start": "node server/index.js",
+    "dev-start": "webpack-dev-server",
     "build": "npm run clean && webpack",
     "build:prod": "npm run clean && webpack",
-    "test": "jest"
+    "test": "jest &&"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "env2": "^2.1.1",
+    "express": "^4.14.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
@@ -37,6 +39,8 @@
     "react-test-renderer": "^15.4.2",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
+    "supertest": "^3.0.0",
+    "tape": "^4.6.3",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^1.16.3"
   }
