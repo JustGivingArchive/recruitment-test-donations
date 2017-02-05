@@ -1,9 +1,8 @@
 import React from 'react';
 
 const IndividualDonation = ({amount, message, imageUrl}) => {
-  console.log(amount, message, imageUrl);
   return (
-    <div className="donation">
+    <div className="panel">
       <p>£{amount}</p>
       <p>{message}</p>
       <img alt="donor profile picture" src={imageUrl}></img>

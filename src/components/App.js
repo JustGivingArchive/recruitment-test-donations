@@ -1,43 +1,69 @@
 import React, { Component } from 'react';
-import Charity from './charity/Charity.js';
-import Donations from './donations/Donations.js';
+
 import charityRequest from '../lib/charityrequest.js';
 import donationRequest from '../lib/donationrequest.js'
+import Content from './Content.js';
+import SeeMore from './Seemore.js'
 
 class App extends Component {
-  constructor() {
+  constructor () {
     super();
     this.state = {
-      charityInfo: {
-        charityName: '',
-        charityInfo: '',
-        charityWebsite: '',
-        logoUrl: ''
-      },
-      donations: []
+      charityInfo: null,
+      donations: null,
+      charityLoaded: false,
+      donationsLoaded: false,
+      dropDown: true
     };
+    this.toggleDropDown = this.toggleDropDown.bind(this);
+    this.newCharity = this.newCharity.bind(this);
+  }
 
-    charityRequest('number', (err, charityInfo) => {
-      if (err) console.log(err);
-      this.setState({ charityInfo });
+  toggleDropDown () {
+    this.setState({ dropDown: !this.state.dropDown });
+  }
+
+  newCharity (charityNumber) {
+    this.setState({
+      dropDown: false,
+      charityInfo: null,
+      donations: null,
+      charityLoaded: false,
+      donationsLoaded: false
     });
 
-    donationRequest('number', (err, donations) => {
-      this.setState({
-        donations: donations,
-      });
-    })
+    charityRequest(charityNumber, (err, charityInfo) => {
+      if (err) console.log(err);
+      if (charityInfo) {
+        this.setState({
+          charityInfo,
+          charityLoaded: true
+        });
+      }
+    });
+
+    donationRequest(charityNumber, (err, donations) => {
+      if (err) console.log(err);
+      if (donations) {
+        this.setState({
+          donations,
+          donationsLoaded: true
+        });
+      }
+    });
   }
 
   render () {
     return (
-      <div>
-        <h1>Fundraising!</h1>
-        <Charity info={this.state.charityInfo} />
-        <Donations donations={this.state.donations} />
+      <div className="app">
+        <div className="header">
+        <h1 className="main_title">Just Giving</h1>
+        {!this.state.dropDown && <SeeMore toggle={this.toggleDropDown} />}
+        </div>
+        <Content select={this.newCharity} {...this.state} />
       </div>
     );
   }
-};
+}
 
 export default App;

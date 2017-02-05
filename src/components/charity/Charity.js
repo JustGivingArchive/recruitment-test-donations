@@ -1,18 +1,16 @@
 import React from 'react';
+import '../../styles/charity/charity.scss';
 
 const Charity = ({ info }) => {
-  const { charityName, charityDescription, logoUrl, charityWebsite } = info;
+  const { charityName, charityDescription, charityWebsite } = info;
   return (
-    <div className="charity_container">
-      <a href={charityWebsite}>
-      <h2>{charityName}</h2>
-      <p>{charityDescription}</p>
-      <img
-        alt={`logo of ${charityName}`}
-        src={`http://images.justgiving.com/image/${logoUrl}`}>
-      </img>
-      </a>
+    <a href={charityWebsite}>
+    <div className="main_container">
+      <h2 className="subtitle">{charityName}</h2>
+      <p className="charity_description">{charityDescription}</p>
     </div>
+    </a>
+
   );
 };
 
