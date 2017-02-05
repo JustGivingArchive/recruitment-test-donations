@@ -1,4 +1,4 @@
-exports[`Test donation info componenet renders correctly 1`] = `
+exports[`Test donation info componenet Matches snapshop correctly 1`] = `
 <div
   className="donations_container">
   <div
