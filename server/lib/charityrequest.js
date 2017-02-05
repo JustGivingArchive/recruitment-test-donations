@@ -21,7 +21,6 @@ const makeRequest = (charityId, callback) => {
       const data = {
         charityName: parsed.name,
         charityDescription: parsed.description,
-        logoUrl: parsed.logoUrl,
         charityWebsite: parsed.websiteUrl
       };
       callback(null, data);

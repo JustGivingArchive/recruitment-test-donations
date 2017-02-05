@@ -18,7 +18,6 @@ const makeRequest = (charityId, callback) => {
     });
     response.on('end', () => {
       const parsed = JSON.parse(body);
-      console.log(parsed);
       const data = parsed.donations;
       callback(null, data);
     });
