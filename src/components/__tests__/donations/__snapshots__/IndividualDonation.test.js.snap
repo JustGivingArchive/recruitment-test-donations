@@ -3,15 +3,15 @@ exports[`Test donation info componenet renders correctly 1`] = `
   className="panel">
   <div
     className="donorinfo">
-    <p
-      className="paneltextlarge">
-      £
-      ?
-    </p>
     <img
       alt="donor profile picture"
       className="donorimage"
       src={undefined} />
+    <p
+      className="paneltextlarge">
+      £
+      --
+    </p>
   </div>
   <p
     className="paneltext donormessage" />

@@ -22181,7 +22181,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var IndividualCharity = function IndividualCharity(_ref) {
   var name = _ref.name,
       id = _ref.id,
-      toggle = _ref.toggle,
       select = _ref.select;
 
   return _react2.default.createElement(
@@ -22269,16 +22268,16 @@ var IndividualDonation = function IndividualDonation(_ref) {
     _react2.default.createElement(
       "div",
       { className: "donorinfo" },
+      _react2.default.createElement("img", {
+        className: "donorimage",
+        alt: "donor profile picture",
+        src: imageUrl }),
       _react2.default.createElement(
         "p",
         { className: "paneltextlarge" },
         "\xA3",
-        amount || '?'
-      ),
-      _react2.default.createElement("img", {
-        className: "donorimage",
-        alt: "donor profile picture",
-        src: imageUrl })
+        amount || '--'
+      )
     ),
     _react2.default.createElement(
       "p",
@@ -22343,7 +22342,7 @@ exports = module.exports = __webpack_require__(84)();
 
 
 // module
-exports.push([module.i, "body {\n  background-color: #40bcd1;\n  padding: 5px;\n  cursor: default; }\n\na {\n  text-decoration: none;\n  color: black; }\n  a:visited {\n    color: black; }\n\n.card, .main_container, .panel {\n  padding: 5px;\n  background-color: white;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }\n\n.hoverable {\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }\n  .hoverable:hover {\n    color: #747491;\n    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }\n\n.text, .main_title, .subtitle, .charity_description, .paneltext, .paneltextlarge {\n  font-family: arial; }\n\n.app {\n  max-width: 700px;\n  margin: auto; }\n\n.header {\n  max-width: 700px;\n  display: flex;\n  justify-content: space-between; }\n\n.main_title {\n  font-size: 3rem;\n  margin: 10px 14px; }\n  @media (max-width: 500px) {\n    .main_title {\n      font-size: 2rem; } }\n\n.subtitle {\n  font-size: 2em;\n  padding-left: 9px;\n  margin: 6px 4px; }\n\n.main_container {\n  max-width: 700px;\n  min-height: 100px;\n  box-sizing: border-box;\n  margin-top: 18px; }\n\n.charity_description {\n  font-size: 1.1em;\n  padding-left: 18px; }\n\n.content_container {\n  max-width: 700px;\n  display: flex;\n  justify-content: space-between;\n  margin: 30px 0px 0px 0px;\n  flex-wrap: wrap;\n  padding: 0px; }\n  @media (max-width: 420px) {\n    .content_container {\n      display: block; } }\n\n.panel {\n  display: flex;\n  flex-basis: 48%;\n  box-sizing: border-box;\n  margin-top: 10px;\n  padding: 5px 14px; }\n\n.paneltext, .paneltextlarge {\n  font-size: 1.2rem; }\n\n.paneltextlarge {\n  font-size: 1.3rem;\n  font-weight: bold; }\n\n.donorinfo {\n  text-align: center;\n  display: block; }\n\n.donorimage {\n  max-height: 50px; }\n\n.donormessage {\n  margin: 14px;\n  text-align: right;\n  font-size: 1.1rem;\n  font-style: italic;\n  width: 100%; }\n\n.loader {\n  margin: 70px auto;\n  border: 16px solid #f3f3f3;\n  border-top: 16px solid #40bcd1;\n  border-radius: 50%;\n  width: 70px;\n  height: 70px;\n  animation: spin 2s linear infinite;\n  transition: all 1.3s;\n  transition-timing-function: ease-in-out;\n  transform: translateZ(0);\n  animation-delay: 0.1s; }\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg); }\n  100% {\n    transform: rotate(360deg); } }\n", ""]);
+exports.push([module.i, "body {\n  background-color: #40bcd1;\n  padding: 5px;\n  cursor: default; }\n\na {\n  text-decoration: none;\n  color: black; }\n  a:visited {\n    color: black; }\n\n.card, .main_container, .panel {\n  padding: 5px;\n  background-color: white;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }\n\n.hoverable {\n  cursor: pointer;\n  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }\n  .hoverable:hover {\n    color: #747491;\n    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }\n\n.text, .main_title, .subtitle, .charity_description, .paneltext, .paneltextlarge {\n  font-family: arial; }\n\n.app {\n  max-width: 700px;\n  margin: auto; }\n\n.header {\n  max-width: 700px;\n  display: flex;\n  justify-content: space-between; }\n\n.main_title {\n  font-size: 3rem;\n  margin: 10px 14px; }\n  @media (max-width: 500px) {\n    .main_title {\n      font-size: 2rem; } }\n\n.subtitle {\n  font-size: 2rem;\n  padding-left: 9px;\n  margin: 6px 4px; }\n  @media (max-width: 500px) {\n    .subtitle {\n      font-size: 1.6rem; } }\n\n.main_container {\n  max-width: 700px;\n  min-height: 100px;\n  box-sizing: border-box;\n  margin-top: 18px; }\n\n.charity_description {\n  font-size: 1.1em;\n  padding-left: 18px; }\n\n.content_container {\n  max-width: 700px;\n  display: flex;\n  justify-content: space-between;\n  margin: 30px 0px 0px 0px;\n  flex-wrap: wrap;\n  padding: 0px; }\n  @media (max-width: 420px) {\n    .content_container {\n      display: block; } }\n\n.panel {\n  display: flex;\n  flex-basis: 48%;\n  box-sizing: border-box;\n  margin-top: 10px;\n  padding: 10px 14px; }\n\n.paneltext, .paneltextlarge {\n  font-size: 1.2rem; }\n\n.paneltextlarge {\n  font-size: 1.3rem;\n  font-weight: bold; }\n\n.donorinfo {\n  text-align: center;\n  display: block; }\n\n.donorimage {\n  max-height: 50px; }\n\n.donormessage {\n  margin: 14px;\n  text-align: right;\n  font-size: 1.1rem;\n  font-style: italic;\n  width: 100%; }\n\n.loader {\n  margin: 70px auto;\n  border: 16px solid #f3f3f3;\n  border-top: 16px solid #40bcd1;\n  border-radius: 50%;\n  width: 70px;\n  height: 70px;\n  animation: spin 2s linear infinite; }\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg); }\n  100% {\n    transform: rotate(360deg); } }\n", ""]);
 
 // exports
 

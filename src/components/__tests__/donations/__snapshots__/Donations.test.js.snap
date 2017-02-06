@@ -5,15 +5,15 @@ exports[`Test donation info componenet Matches snapshop correctly 1`] = `
     className="panel">
     <div
       className="donorinfo">
+      <img
+        alt="donor profile picture"
+        className="donorimage"
+        src="http://image.jpeg" />
       <p
         className="paneltextlarge">
         £
         5
       </p>
-      <img
-        alt="donor profile picture"
-        className="donorimage"
-        src="http://image.jpeg" />
     </div>
     <p
       className="paneltext donormessage">
