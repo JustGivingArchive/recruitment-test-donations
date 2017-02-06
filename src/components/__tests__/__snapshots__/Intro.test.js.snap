@@ -1,0 +1,9 @@
+exports[`Test Intro component matches snapshot 1`] = `
+<div
+  className="main_container">
+  <h2
+    className="subtitle">
+    Please select a charity to see donations.
+  </h2>
+</div>
+`;

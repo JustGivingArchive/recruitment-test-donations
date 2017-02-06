@@ -1,0 +1,10 @@
+exports[`Test charity info componenet renders correctly 1`] = `
+<div
+  className="panel hoverable"
+  onClick={[Function]}>
+  <p
+    className="paneltextlarge">
+    name
+  </p>
+</div>
+`;
