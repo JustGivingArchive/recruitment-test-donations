@@ -52,9 +52,12 @@ a {
 
 .subtitle {
   @extend .text;
-  font-size: 2em;
+  font-size: 2rem;
   padding-left: 9px;
   margin: 6px 4px;
+  @media (max-width: 500px) {
+    font-size: 1.6rem;
+  }
 }
 
 .main_container {
@@ -89,7 +92,7 @@ a {
   flex-basis: 48%;
   box-sizing: border-box;
   margin-top: 10px;
-  padding: 5px 14px;
+  padding: 10px 14px;
 }
 
 .paneltext {
