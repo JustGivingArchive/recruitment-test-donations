@@ -32,7 +32,10 @@ const CharitySelector = (props) => {
   ];
   return (
     <div className="content_container">
-      {charitys.map((charity) => <IndividualCharity select={props.select} {...charity} />)}
+      {charitys.map((charity) => <IndividualCharity
+        key={charity.id}
+        select={props.select}
+        {...charity} />)}
     </div>
   );
 };

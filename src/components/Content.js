@@ -1,13 +1,18 @@
 import React from 'react';
+
 import Charity from './charity/Charity.js';
 import Donations from './donations/Donations.js';
 import CharitySelector from './charity/Charityselector.js';
+import Intro from './Intro.js';
+import SeeMore from './Seemore.js'
 
 const Content = (props) => {
-  console.log(props);
   if (props.dropDown) {
     return (
-      <CharitySelector select={props.select} />
+      <div>
+        <Intro />
+        <CharitySelector select={props.select} />
+      </div>
     )
   }
 
@@ -16,14 +21,13 @@ const Content = (props) => {
       <div>
         <Charity info={props.charityInfo} />
         <Donations donations={props.donations} />
+        {!props.dropDown && <SeeMore toggle={() => props.toggle()} />}
       </div>
     );
   }
 
   return (
-      <div className="main_container">
-        <h2 className="subtitle">Loading</h2>
-      </div>
+      <div className="loader"></div>
   );
 };
 

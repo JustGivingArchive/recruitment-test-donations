@@ -57,10 +57,12 @@ class App extends Component {
     return (
       <div className="app">
         <div className="header">
-        <h1 className="main_title">Just Giving</h1>
-        {!this.state.dropDown && <SeeMore toggle={this.toggleDropDown} />}
+        <h1 className="main_title">Just Giving Donation Viewer</h1>
         </div>
-        <Content select={this.newCharity} {...this.state} />
+        <Content
+          toggle={this.toggleDropDown}
+          select={this.newCharity}
+          {...this.state} />
       </div>
     );
   }

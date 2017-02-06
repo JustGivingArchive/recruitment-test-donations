@@ -7,7 +7,9 @@ import IndividualDonation from './IndividualDonation.js';
 const Donations = ({ donations }) => {
   return (
     <div className="content_container">
-      {donations.map((donation) => <IndividualDonation {...donation} />)}
+      {donations.map((data, key) => <IndividualDonation
+        key={key}
+        {...data} />)}
     </div>
   );
 };

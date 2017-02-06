@@ -2,7 +2,9 @@ import React from 'react';
 
 const SeeMore = (props) => {
   return (
-    <h2 className="seemore" onClick={props.toggle}>See other Charities</h2>
+    <div onClick={props.toggle} className="panel hoverable">
+    <h2 className="paneltextlarge">See other Charities</h2>
+    </div>
   );
 };
 
