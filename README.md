@@ -7,6 +7,22 @@ I'm still very new to working in React. During this exercise I learnt a lot abou
 
 If I was going to expand this project I would like to allow the user to search amongst a wider range of charities, and include more visual elements - including each charity's logo.
 
+## Running this app locally
+I have hosted the project on [heroku here](https://just-giving-challenge.herokuapp.com/). If you want to run the project locally,
+* `git clone git@github.com:Jwhiles/recruitment-test-donations.git`
+* `cd recruitment-test-donations`
+* `npm install`
+* get yourself a just giving API key, create a config.env file in the root directory with this format 
+```
+export API_ID=YOURAPIKEYHERE
+```
+* `npm run start` to run the project local host 3000
+
+
+## Other commands
+* `npm run build` to rebuild the project
+* `npm run test` to run tests
+
 
 # Spec
 ## The Challenge
