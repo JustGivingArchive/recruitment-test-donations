@@ -1,17 +1,24 @@
 exports[`Test donation info componenet Matches snapshop correctly 1`] = `
 <div
-  className="donations_container">
+  className="content_container">
   <div
-    className="donation">
-    <p>
-      amount
+    className="panel">
+    <div
+      className="donorinfo">
+      <p
+        className="paneltextlarge">
+        £
+        5
+      </p>
+      <img
+        alt="donor profile picture"
+        className="donorimage"
+        src="http://image.jpeg" />
+    </div>
+    <p
+      className="paneltext donormessage">
+      hello
     </p>
-    <p>
-      message
-    </p>
-    <img
-      alt="donor profile picture"
-      src="donor profile picture" />
   </div>
 </div>
 `;

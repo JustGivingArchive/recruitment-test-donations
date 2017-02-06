@@ -1,14 +1,19 @@
 exports[`Test donation info componenet renders correctly 1`] = `
 <div
-  className="donation">
-  <p>
-    amount
-  </p>
-  <p>
-    message
-  </p>
-  <img
-    alt="donor profile picture"
-    src="donor profile picture" />
+  className="panel">
+  <div
+    className="donorinfo">
+    <p
+      className="paneltextlarge">
+      £
+      ?
+    </p>
+    <img
+      alt="donor profile picture"
+      className="donorimage"
+      src={undefined} />
+  </div>
+  <p
+    className="paneltext donormessage" />
 </div>
 `;

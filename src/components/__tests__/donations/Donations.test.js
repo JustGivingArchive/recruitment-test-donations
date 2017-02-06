@@ -6,26 +6,30 @@ import Donations from '../../donations/Donations.js';
 import IndividualDonation from '../../donations/IndividualDonation.js';
 
 describe('Test donation info componenet', () => {
-  let props;
   let mounted;
+  const exampleDonations = [
+    {
+      amount: '5',
+      message: 'hello',
+      imageUrl: 'http://image.jpeg'
+    }
+  ]
   const donations = () => {
     if (!mounted) {
       mounted = mount(
-        <Donations {...props} />
+        <Donations donations={exampleDonations} />
       );
     }
     return mounted;
   }
 
   beforeEach(() => {
-    props = {
-    };
     mounted = undefined;
   });
 
   it('Matches snapshop correctly', () => {
     const tree = renderer.create(
-      <Donations />
+      <Donations donations={exampleDonations} />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

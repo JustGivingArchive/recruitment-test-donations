@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer';
 import { mount } from "enzyme";
 
 import App from '../App.js';
-import Charity from '../charity/Charity.js';
 import Donations from '../donations/Donations.js';
+import Content from '../Content.js';
 
 describe('App', () => {
   let props;
@@ -42,11 +42,7 @@ describe('App', () => {
     expect(wrappingDiv.children()).toEqual(app().children());
   });
 
-  it("always renders a Charity", () => {
-    expect(app().find(Charity).length).toBe(1);
+  it("always renders Content", () => {
+    expect(app().find(Content).length).toBe(1);
   })
-  it("always renders a Donations", () => {
-    expect(app().find(Donations).length).toBe(1);
-  })
-
 });

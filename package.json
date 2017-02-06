@@ -9,7 +9,7 @@
     "dev-start": "webpack-dev-server",
     "build": "npm run clean && webpack",
     "build:prod": "npm run clean && webpack",
-    "test": "jest &&"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
