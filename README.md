@@ -1,6 +1,14 @@
 # Recruitment Test - Charity Donations
 An unattended front end recruitment test for JustGiving.
 
+Full spec can be found below. I diverged slightly by allowing the user to select a charity to view.
+
+I'm still very new to working in React. During this exercise I learnt a lot about structuring and testing a React app. [this article](https://medium.freecodecamp.com/the-right-way-to-test-react-components-548a4736ab22#.qtzc4tnti) proved very helpful in guiding how I tested the components - I definitely have a lot left to learn.
+
+If I was going to expand this project I would like to allow the user to search amongst a wider range of charities, and include more visual elements - including each charity's logo.
+
+
+# Spec
 ## The Challenge
 Create an application to display the latest donations for a charity using [React](https://facebook.github.io/react) and [Node.js](https://nodejs.org).
 
