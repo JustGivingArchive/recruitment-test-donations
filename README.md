@@ -1,6 +1,30 @@
 # Recruitment Test - Charity Donations
-An unattended front end recruitment test for JustGiving.
+An unattended front end recruitment test for JustGiving. The full specification can be found below. I diverged slightly by allowing the user to select a charity to view.
 
+During this exercise I learnt a lot about structuring and testing a React app. [this article](https://medium.freecodecamp.com/the-right-way-to-test-react-components-548a4736ab22#.qtzc4tnti) proved very helpful in guiding how I tested the components. 
+
+The exercise also taught me a lot about setting up React. I based my webpack.config.js on an example from Peter Thompson, and later expanded it with an SCSS loader. 
+
+If I was going to expand this project I would like to allow the user to search amongst a wider range of charities, and include more visual elements - including each charity's logo. I would also like to introduce Redux if the state became any more complex - Redux is way cooler than React state. 
+
+## Running this app locally
+I have hosted the project on [heroku here](https://just-giving-challenge.herokuapp.com/). If you want to run the project locally,
+* `git clone git@github.com:Jwhiles/recruitment-test-donations.git`
+* `cd recruitment-test-donations`
+* `npm install`
+* get yourself a just giving API key, create a config.env file in the root directory with this format 
+```
+export API_ID=YOURAPIKEYHERE
+```
+* `npm run start` to run the project local host 3000
+
+
+## Other commands
+* `npm run build` to rebuild the project
+* `npm run test` to run tests
+
+
+# Spec
 ## The Challenge
 Create an application to display the latest donations for a charity using [React](https://facebook.github.io/react) and [Node.js](https://nodejs.org).
 
