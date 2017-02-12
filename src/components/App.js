@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-import charityRequest from '../lib/charityrequest.js';
-import donationRequest from '../lib/donationrequest.js'
+import makeRequest from '../lib/makeRequest.js';
 import Content from './Content.js';
 import SeeMore from './Seemore.js'
 
@@ -32,25 +31,27 @@ class App extends Component {
       donationsLoaded: false
     });
 
-    charityRequest(charityNumber, (err, charityInfo) => {
-      if (err) console.log(err);
-      if (charityInfo) {
-        this.setState({
-          charityInfo,
-          charityLoaded: true
-        });
-      }
+    makeRequest(`/charityrequest?id=${charityNumber}`)
+    .then((charityInfo) => {
+      this.setState({
+        charityInfo,
+        charityLoaded: true
+      });
+    })
+    .catch((err) => {
+      console.error('An error happened with donation request', err);
     });
 
-    donationRequest(charityNumber, (err, donations) => {
-      if (err) console.log(err);
-      if (donations) {
+    makeRequest(`/donationrequest?id=${charityNumber}`)
+      .then((donations) => {
         this.setState({
           donations,
           donationsLoaded: true
         });
-      }
-    });
+      })
+      .catch((err) => {
+        console.error('An error happened with charity request', err);
+      });
   }
 
   render () {
