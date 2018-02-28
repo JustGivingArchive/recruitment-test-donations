@@ -1,0 +1,72 @@
+exports[`App matches snapshot 1`] = `
+<div
+  className="app">
+  <div
+    className="header">
+    <h1
+      className="main_title">
+      Just Giving Donation Viewer
+    </h1>
+  </div>
+  <div>
+    <div
+      className="main_container">
+      <h2
+        className="subtitle">
+        Please select a charity to see donations.
+      </h2>
+    </div>
+    <div
+      className="content_container">
+      <div
+        className="panel hoverable"
+        onClick={[Function]}>
+        <p
+          className="paneltextlarge">
+          British Heart Foundation
+        </p>
+      </div>
+      <div
+        className="panel hoverable"
+        onClick={[Function]}>
+        <p
+          className="paneltextlarge">
+          Cancer Research UK
+        </p>
+      </div>
+      <div
+        className="panel hoverable"
+        onClick={[Function]}>
+        <p
+          className="paneltextlarge">
+          Macmillan Cancer Support
+        </p>
+      </div>
+      <div
+        className="panel hoverable"
+        onClick={[Function]}>
+        <p
+          className="paneltextlarge">
+          Oxfam
+        </p>
+      </div>
+      <div
+        className="panel hoverable"
+        onClick={[Function]}>
+        <p
+          className="paneltextlarge">
+          National Trust
+        </p>
+      </div>
+      <div
+        className="panel hoverable"
+        onClick={[Function]}>
+        <p
+          className="paneltextlarge">
+          Save the Children
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

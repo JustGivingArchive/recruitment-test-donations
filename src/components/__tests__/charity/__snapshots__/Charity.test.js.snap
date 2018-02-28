@@ -1,0 +1,16 @@
+exports[`Test charity info componenet renders correctly 1`] = `
+<a
+  href="http://arealwebsite.com">
+  <div
+    className="main_container hoverable">
+    <h2
+      className="subtitle">
+      x
+    </h2>
+    <p
+      className="charity_description">
+      a real charity
+    </p>
+  </div>
+</a>
+`;

@@ -1,0 +1,139 @@
+body {
+  background-color: #91A8d0;
+  padding: 5px;
+  cursor:default;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:visited {
+    color: black;
+  }
+}
+
+.card {
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.hoverable {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover {
+    color: rgb(116, 116, 145);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+}
+
+.text {
+  font-family: arial;
+}
+
+.app {
+  max-width: 700px;
+  margin: auto;
+}
+
+.header {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_title {
+  @extend .text;
+  font-size: 3rem;
+  margin: 10px 14px;
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }}
+
+.subtitle {
+  @extend .text;
+  font-size: 2rem;
+  padding-left: 9px;
+  margin: 6px 4px;
+  @media (max-width: 500px) {
+    font-size: 1.6rem;
+  }
+}
+
+.main_container {
+  @extend .card;
+  max-width: 700px;
+  min-height: 100px;
+  box-sizing: border-box;
+  margin-top: 18px;
+}
+
+.charity_description {
+  @extend .text;
+  font-size: 1.1em;
+  padding-left: 18px;
+}
+
+.content_container {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 0px 0px;
+  flex-wrap: wrap;
+  padding: 0px;
+  @media (max-width: 420px) {
+    display: block;
+  }
+}
+
+.panel {
+  @extend .card;
+  display: flex;
+  flex-basis: 48%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 10px 14px;
+}
+
+.paneltext {
+  @extend .text;
+  font-size: 1.2rem;
+}
+
+.paneltextlarge {
+  @extend .paneltext;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.donorinfo {
+  text-align: center;
+  display: block;
+}
+
+.donorimage {
+  max-height: 50px;
+}
+
+.donormessage {
+  margin: 14px;
+  text-align: right;
+  font-size: 1.1rem;
+  font-style: italic;
+  width: 100%;
+}
+
+.loader {
+    margin: 70px auto;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #91A8d0;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

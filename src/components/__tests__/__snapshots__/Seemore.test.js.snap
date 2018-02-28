@@ -1,0 +1,10 @@
+exports[`Test Intro component matches snapshot 1`] = `
+<div
+  className="panel hoverable"
+  onClick={[Function]}>
+  <h2
+    className="paneltextlarge">
+    See other Charities
+  </h2>
+</div>
+`;
