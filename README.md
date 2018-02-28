@@ -2,13 +2,13 @@
 An unattended front end recruitment test for JustGiving.
 
 ## The Challenge
-Create an application to display the latest donations for a charity using [React](https://facebook.github.io/react) and [Node.js](https://nodejs.org).
+Create an application to display the latest donations for a charity using [React](https://facebook.github.io/react) and any suitable libraries.
 
 ### Requirements
 A good solution will
 * be production ready
 * work on evergreen browsers
-* have good test coverage and show evidence of TDD
+* have good test coverage
 * have an elegant user experience and design
 * use _appropriate_ front end tooling
 
