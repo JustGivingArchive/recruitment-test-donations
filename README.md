@@ -42,3 +42,13 @@ curl -H "Content-Type: application/json" https://api.justgiving.com/{appId}/v1/c
 ```
 curl -H "Content-Type: application/json" https://api.justgiving.com/{appId}/v1/charity/{charityId}/donations
 ```
+
+Run App 
+
+- create a .env file 
+- APP_ID=
+CHARITY_ID=
+- create a app id and charity_id add to .env file 
+- npm install 
+- npm start 
+- npm start build -
